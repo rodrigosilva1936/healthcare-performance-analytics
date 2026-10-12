@@ -1,5 +1,5 @@
 
--- Verificar se está tudo igual ao csv
+-- Verificar se estï¿½ tudo igual ao csv
 SELECT COUNT(*) AS total_records
 FROM dbo.[healthcare-cleaned]
 
@@ -11,7 +11,7 @@ SELECT MIN(periodo) as first_record, MAX(periodo) as last_record
 FROM dbo.[healthcare-cleaned]
 
 -- Records per Region
-SELECT  ars AS regiões, COUNT(*) AS total_records
+SELECT  ars AS regioes, COUNT(*) AS total_records
 FROM dbo.[healthcare-cleaned]
 GROUP BY ars
 ORDER BY total_records DESC
