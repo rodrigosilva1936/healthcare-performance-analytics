@@ -1,5 +1,5 @@
 
--- Verificar se est� tudo igual ao csv
+
 SELECT COUNT(*) AS total_records
 FROM dbo.[healthcare-cleaned]
 

@@ -1,8 +1,8 @@
 
 
 -- Emergency Episodes Analysis
-
-
+USE HealthcareAnalytics
+GO
 -- Average emergency episodes by region
 
 SELECT ars, AVG(valor) AS Avg_emergency_episodes
@@ -47,4 +47,18 @@ ORDER BY Avg_emergency_episodes DESC
 
 -- Quarter: 4 > 3 > 2 > 1 (Number of emergency episodes increases with higher the quarter of the year)
 
+-- 5. Highest/Lowest daily emergency episode values
+
+SELECT TOP 10 periodo, ars, valor
+FROM [healthcare-cleaned]
+WHERE indicador = 'Número estimado de episódios de urgência' AND ars <> 'Portugal Continental'
+ORDER BY valor DESC
+
+SELECT TOP 10 periodo, ars, valor
+FROM [healthcare-cleaned]
+WHERE indicador = 'Número estimado de episódios de urgência' AND ars <> 'Portugal Continental'
+ORDER BY valor ASC
+
+-- Highest value : 2022-11-14 ARS Norte : 8495
+-- Lowest value: 2022-02-17 ARS Algarve : 94
 
