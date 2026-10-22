@@ -258,7 +258,14 @@ Raw Healthcare Data -> Data Understanding & Cleaning (Python + Pandas) -> Cleane
 ## Dashboard Preview
 
 Screenshots of the Power BI dashboard can be found in the `images/` folder.
+### Healthcare Performance Overview
+[Healthcare Performance Overview](images/healthcare-overview.png)
 
+### Regional Performance Analysis
+[Regional Performance Analysis](images/regional-performance.png)
+
+### Trends & Insights
+[Trends and Insights](images/trends-insights.png)
 
 ---
 
